@@ -1,0 +1,333 @@
+
+/* =================================
+    Home page
+================================= */
+/*background image */
+/* Local body */
+.Home-body {
+    background-image: url('/Assets/images/background.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+
+/* Home Page nav>ul>li> */
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+
+body {
+    margin: 0;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.navbar li a:hover{
+    color: hsl(0, 0%, 30%);  
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.homeh1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 5px, solid, rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+}s
+
+.home-actions {
+    display: flex;
+    gap: 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+        
+}
+
+.menu-link, .order-now-btn {
+    display: inline-block;
+    padding: 18px 38px;
+    font-size: 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px #0001;
+}
+
+.menu-link {
+    background: rgba(255,255,255,0.35); /* semi-transparent white */
+    color: #222;
+    border: 2px solid #fff;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 24px #0002;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 
+        background 0.25s,
+        color 0.25s,
+        border-color 0.25s,
+        box-shadow 0.25s,
+        transform 0.15s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-link:hover {
+    background: rgba(168, 149, 149, 0.25);
+    color: #a89595;
+    border-color: #a89595;
+    box-shadow: 0 8px 32px #a8959522;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.order-now-btn {
+    background: rgba(168, 149, 149, 0.35); /* semi-transparent accent */
+    color: #000000;
+    border: 2px solid #fff;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 24px #0002;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 
+        background 0.25s,
+        color 0.25s,
+        border-color 0.25s,
+        box-shadow 0.25s,
+        transform 0.15s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-now-btn:hover {
+    background: rgba(255,255,255,0.25);
+    color: #a89595;
+    border-color: #a89595;
+    box-shadow: 0 8px 32px #a8959522;
+    transform: translateY(-2px) scale(1.04);
+}
+/* =================================
+    Home page end
+================================= */
+
+/* ====================== ===========
+    Menu page
+================================= */
+.menu-body {
+    background-image: url('/Assets/images/menu-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+    color: #222;
+    text-shadow: 0 2px 16px #fff8, 0 2px 24px #0002;
+    letter-spacing: 2px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.menu-card {
+    background: rgba(255,255,255,0.35);
+    border: 2px solid #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0002;
+    backdrop-filter: blur(6px);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 
+        box-shadow 0.2s,
+        transform 0.15s,
+        background 0.2s;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.menu-card:hover {
+    background: rgba(168, 149, 149, 0.18);
+    box-shadow: 0 8px 32px #a8959522;
+    transform: translateY(-6px) scale(1.04);
+}
+
+.menu-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #0001;
+    transition: transform 0.2s;
+}
+
+.menu-card:hover img {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.menu-card h2 {
+    font-size: 2rem;
+    color: #222;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 6px #0001;
+}
+
+.menu-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ============================================
+    Menu page end
+   ============================================
+*/
+
+/*
+================================================
+    Hot-drinks page
+================================================
+*/
+
+.hot-drinks-background {
+    background-image: url('/Assets/images/hot-drinks-background.webp')
+    background-size: cover;
+    background-position:zz center;
+    min-height: 100vh;
+}
+
+.hot-drinks-title {
+    display: flex;
+    justify-content: center;
+}
+.hot-drinks-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.hot-drink-card {
+        background: rgba(255,255,255,0.35);
+    border: 2px solid #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0002;
+    backdrop-filter: blur(6px);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 
+        box-shadow 0.2s,
+        transform 0.15s,
+        background 0.2s;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.hot-drink-card:hover {
+        background: rgba(168, 149, 149, 0.18);
+    box-shadow: 0 8px 32px #a8959522;
+    transform: translateY(-6px) scale(1.04);
+    cursor: pointer;
+}
+
+.hot-drink-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #0001;
+    transition: transform 0.2s;
+}
+
+.hot-drink-card:hover img {
+     transform: scale(1.05) rotate(-2deg);
+}
+
+.hot-drink-card h4 {
+        font-size: 2rem;
+    color: #222;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 6px #0001;
+}
+
+.hot-drink-card a {
+        text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hot-drink-card button {
+background-color: hwb(0 0% 100%);
+color: white;
+border-radius: 3px;
+border: none;
+padding: 7px;
+}
+
+
+
