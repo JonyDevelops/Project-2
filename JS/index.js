@@ -67,3 +67,7 @@ function showAddToCartNotification(productName) {
         notification.remove();
     }, 3000);
 }
+
+function toggleCart() {
+    window.location.href = "/Pages/Cart.html";
+}   
