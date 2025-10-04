@@ -16,8 +16,15 @@
     display: flex;
     justify-content: space-between;
     background-color: hsl(0, 64%, 40%);
+    width: #;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 body {
     margin: 0;
@@ -63,7 +70,7 @@ body {
     border: 5px, solid, rgb(255, 255, 255);
     border-radius: 15px;
     padding: 20px;
-}s
+}
 
 .home-actions {
     display: flex;
@@ -156,7 +163,7 @@ body {
     font-size: 3rem;
     margin-top: 40px;
     color: #222;
-    text-shadow: 0 2px 16px #fff8, 0 2px 24px #0002;
+    text-shadow: 0 2px 16px #fff8, 0 2px 24px rgb(0, 0, 0);
     letter-spacing: 2px;
 }
 
@@ -565,7 +572,6 @@ padding: 7px;
     transform: translateY(-2px);
 }
 
-/* Empty Cart */
 .empty-cart {
     text-align: center;
     padding: 60px 20px;
@@ -583,7 +589,6 @@ padding: 7px;
     margin-bottom: 30px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .cart-container {
         padding: 20px;
@@ -629,11 +634,11 @@ padding: 7px;
     justify-content: center;
     min-height: 60vh;
     max-width: 400px;
-    margin: 50px auto; /* Adds space from the navbar and centers it */
+    margin: 50px auto;
     padding: 40px;
     border-radius: 10px;
         max-width: 650px;
-    margin: 50px auto; /* Adds space from the navbar and centers it */
+    margin: 50px auto;
     padding: 40px;
     background: rgb(209, 70, 70);
     border:  hsl(0, 64%, 40%) 7px solid;
@@ -648,34 +653,29 @@ padding: 7px;
 }
 
 #cart-items {
-    min-height: 100px; /* Gives the box some height even when empty */
+    min-height: 100px; 
     margin-bottom: 25px;
     padding-bottom: 25px;
-    border-bottom: 2px solid #eeeeee; /* A light separator line above the total */
-    text-align: left; /* Best for listing items */
+    border-bottom: 2px solid #eeeeee;
+    text-align: left; 
 }
 
-/* Styling for the total price display */
 .cart-total {
     font-size: 1.6rem;
     font-weight: bold;
     color: #000000;
     margin-bottom: 35px;
-    text-align: right; /* Aligns the total to the right */
+    text-align: right; 
     padding-right: 10px;
 }
 
-/* This is the container for your action buttons */
 .cart-btn {
-    display: flex; /* Use flexbox for easy alignment */
-    justify-content: center; /* Center the buttons */
-    gap: 15px; /* Creates space between the buttons */
-    flex-wrap: wrap; /* Allows buttons to stack on smaller screens */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-
-/* --- Button Specific Styling --- */
-/* A general style for all buttons inside the cart */
 .cart-btn button {
     padding: 12px 28px;
     font-size: 1rem;
@@ -688,21 +688,19 @@ padding: 7px;
 }
 
 .cart-btn button:hover {
-    transform: translateY(-2px); /* Gives a slight "lift" effect on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhances the lift with shadow */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
-/* "Clear Cart" button - styled with the existing "clear" class */
+ 
 .cart-btn .clear {
-    background-color: #ff4d4d; /* A clear, modern red for destructive actions */
+    background-color: #ff4d4d;
 }
 
-/* "Checkout" button - styled with the existing "CartCheckout" class */
 .cart-btn .CartCheckout {
-    background-color: #4CAF50; /* A friendly green for the primary action */
+    background-color: #4CAF50; 
 }
 
-/* "Close" button - styled with the existing "close" class */
 .cart-btn .close {
-    background-color: #888; /* A neutral grey */
+    background-color: #888;
 }
