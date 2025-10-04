@@ -10,13 +10,12 @@
     background-size: cover;
 }
 
-
 /* Home Page nav>ul>li> */
 .navbar {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: hsl(0, 64%, 40%);
 }
 
 
@@ -241,10 +240,7 @@ body {
 */
 
 .hot-drinks-background {
-    background-image: url('/Assets/images/hot-drinks-background.webp')
-    background-size: cover;
-    background-position:zz center;
-    min-height: 100vh;
+    background-color: rgb(209, 70, 70);
 }
 
 .hot-drinks-title {
@@ -617,6 +613,96 @@ padding: 7px;
     }
 }
 
-/* =================================
-    Cart Styling End
-================================= */
+
+.cart-btn { 
+    border-radius: 3px;
+    border: none;
+    padding: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    max-width: 400px;
+    margin: 50px auto; /* Adds space from the navbar and centers it */
+    padding: 40px;
+    border-radius: 10px;
+        max-width: 650px;
+    margin: 50px auto; /* Adds space from the navbar and centers it */
+    padding: 40px;
+    background: rgb(209, 70, 70);
+    border:  hsl(0, 64%, 40%) 7px solid;
+}
+
+.shopping-cart h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+#cart-items {
+    min-height: 100px; /* Gives the box some height even when empty */
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #eeeeee; /* A light separator line above the total */
+    text-align: left; /* Best for listing items */
+}
+
+/* Styling for the total price display */
+.cart-total {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 35px;
+    text-align: right; /* Aligns the total to the right */
+    padding-right: 10px;
+}
+
+/* This is the container for your action buttons */
+.cart-btn {
+    display: flex; /* Use flexbox for easy alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Creates space between the buttons */
+    flex-wrap: wrap; /* Allows buttons to stack on smaller screens */
+}
+
+
+/* --- Button Specific Styling --- */
+/* A general style for all buttons inside the cart */
+.cart-btn button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-btn button:hover {
+    transform: translateY(-2px); /* Gives a slight "lift" effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhances the lift with shadow */
+}
+
+/* "Clear Cart" button - styled with the existing "clear" class */
+.cart-btn .clear {
+    background-color: #ff4d4d; /* A clear, modern red for destructive actions */
+}
+
+/* "Checkout" button - styled with the existing "CartCheckout" class */
+.cart-btn .CartCheckout {
+    background-color: #4CAF50; /* A friendly green for the primary action */
+}
+
+/* "Close" button - styled with the existing "close" class */
+.cart-btn .close {
+    background-color: #888; /* A neutral grey */
+}

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu | Local Cafe</title>
+    <title>Your Cart | Local Cafe</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <script src="/JS/index.js"></script>
 </head>
-<body class="menu-body" loading="lazy">
+<body class="cart-body" loading="lazy">
    <header class="navbar">
         <nav>
             <ul>
@@ -29,14 +29,13 @@
     <div class="shopping-cart">
         <h2>Your Cart</h2>
         <div id="cart-items">
-
-        </div>
+            </div>
         <div class="cart-total">
-            <strong>Total: $<span id="cart-total">0.00</span></strong>
+            <strong>Total: £<span id="cart-total">0.00</span></strong>
         </div>
         <div class="cart-btn">
-            <button class="close" onclick="CartClose"></button>
-            <button class="CartCheckout" onclick="Checkout()"></button>
+            <button class="close" onclick="CartClose()">Close</button>
+            <button class="CartCheckout" onclick="Checkout()">Checkout</button>
             <button class="clear" onclick="clearCart()">Clear Cart</button>
         </div>
     </div>

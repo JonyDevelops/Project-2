@@ -25,7 +25,7 @@ function addToCart(productName) {
         existingItem.quantity += 1;
     } else {
         cart.push({
-            id: Date.now(), // Simple unique ID
+            id: Date.now(), 
             name: product.name,
             price: product.price,
             image: product.image,
@@ -54,26 +54,86 @@ function updateCartDisplay() {
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCountElement.textContent = totalItems;
     }
-    saveCartToLocalStorage(); // Save cart every time it updates
+    saveCartToLocalStorage();
 }
 
+function renderCartItems() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalElement = document.getElementById('cart-total');
+    if (!cartItemsContainer || !cartTotalElement) return;
+
+    cartItemsContainer.innerHTML = '';
+
+    let total = 0;
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p class="empty-cart-message">Your cart is empty.</p>';
+    } else {
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+            const itemElement = document.createElement('div');
+            itemElement.className = 'cart-item';
+            itemElement.innerHTML = `
+                <div class="cart-item-image">
+                    <img src="${item.image || '/Assets/images/default-coffee.png'}" alt="${item.name}">
+                </div>
+                <div class="cart-item-details">
+                    <h3>${item.name}</h3>
+                    <p class="cart-item-price">£${item.price.toFixed(2)}</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)">-</button>
+                    <span class="quantity">${item.quantity}</span>
+                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
+                </div>
+                <div class="cart-item-total">
+                    £${itemTotal.toFixed(2)}
+                </div>
+                <button class="remove-item-btn" onclick="removeFromCart(${item.id})">×</button>
+            `;
+            cartItemsContainer.appendChild(itemElement);
+        });
+    }
+
+    cartTotalElement.textContent = total.toFixed(2);
+    updateCartDisplay();
+}
+
+function changeQuantity(itemId, change) {
+    const item = cart.find(i => i.id === itemId);
+    if (item) {
+        item.quantity += change;
+        if (item.quantity <= 0) {
+            removeFromCart(itemId);
+        } else {
+            renderCartItems();
+        }
+    }
+}
+
+function removeFromCart(itemId) {
+    cart = cart.filter(i => i.id !== itemId);
+    renderCartItems();
+}
+
+function clearCart() {
+    cart = [];
+    renderCartItems();
+}
+
+function Checkout() {
+    if (cart.length > 0) {
+        alert('Thank you for your order!');
+        clearCart();
+    } else {
+        alert('Your cart is empty.');
+    }
+}
 
 function showAddToCartNotification(productName) {
     const notification = document.createElement('div');
     notification.className = 'cart-notification';
     notification.textContent = `${productName} added to cart!`;
-    notification.style.cssText = `
-        position: fixed;
-        top: 80px;
-        right: 20px;
-        background: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        z-index: 1000;
-        animation: slideIn 0.3s ease;
-    `;
-    
     document.body.appendChild(notification);
     
     setTimeout(() => {
@@ -85,11 +145,14 @@ function toggleCart() {
     window.location.href = "/Pages/Cart.html";
 }
 
+function CartClose() {
+    window.location.href = "../index.html";
+}
+
 window.addEventListener('DOMContentLoaded', () => {
     loadCartFromLocalStorage();
     updateCartDisplay();
+    if (document.getElementById('cart-items')) {
+        renderCartItems();
+    }
 });
-
-function CartClose() {
-    window.location.href = "/Pages/Index.html";
-}
