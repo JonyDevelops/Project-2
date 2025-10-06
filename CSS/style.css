@@ -1,3 +1,4 @@
+/* Hot drinks class is used on cold drinks page and snacks drink page!!! */
 
 /* =================================
     Home page
@@ -7,7 +8,7 @@
 .Home-body {
     background-image: url('/Assets/images/background.jpg');
     background-repeat: no repeat;
-    background-size: cover;
+background-size: cover;
 }
 
 /* Home Page nav>ul>li> */
@@ -254,6 +255,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.coffee {
+font-size: 1.8rem;
+display: flex;
+justify-content: left;
+margin-left: 12%;
+}
 .hot-drinks-grid {
     display: flex;
     justify-content: center;
@@ -277,9 +284,10 @@ body {
     transition: 
         box-shadow 0.2s,
         transform 0.15s,
-        background 0.2s;
+        background 0.2s;    
     min-width: 240px;
     max-width: 280px;
+    margin-bottom: 30px;
 }
 
 .hot-drink-card:hover {
@@ -331,6 +339,107 @@ border-radius: 3px;
 border: none;
 padding: 7px;
 }
+/* hot drink end */
+
+/* cold drink start */
+
+
+.cold-drinks-background {
+    background-color: rgb(209, 70, 70);
+}
+
+.cold-drinks-title {
+    display: flex;
+    justify-content: center;
+}
+.coffee {
+font-size: 1.8rem;
+display: flex;
+justify-content: left;
+margin-left: 12%;
+}
+.cold-drinks-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 60px auto 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.cold-drink-card {
+        background: rgba(255,255,255,0.35);
+    border: 2px solid #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0002;
+    backdrop-filter: blur(6px);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 
+        box-shadow 0.2s,
+        transform 0.15s,
+        background 0.2s;    
+    min-width: 240px;
+    max-width: 280px;
+    margin-bottom: 30px;
+}
+
+.cold-drink-card:hover {
+        background: rgba(168, 149, 149, 0.18);
+    box-shadow: 0 8px 32px #a8959522;
+    transform: translateY(-6px) scale(1.04);
+    cursor: pointer;
+}
+
+.cold-drink-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #0001;
+    transition: transform 0.2s;
+}
+
+.cold-drink-card:hover img {
+     transform: scale(1.05) rotate(-2deg);
+}
+
+.cold-drink-card h4 {
+        font-size: 2rem;
+    color: #222;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 6px #0001;
+}
+
+.cold-drink-card a {
+        text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cold-drink-card button {
+background-color: hwb(0 0% 100%);
+color: white;
+border-radius: 3px;
+border: none;
+padding: 7px;
+}
+
+/* =================================
+    Cart Icon Styling
+================================= */
 
 .cart-icon {
     position: relative;
