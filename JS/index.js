@@ -24,12 +24,14 @@ const productData = {
     'Mocha Frappe': { name: 'Mocha Frappe', price: 3.00, image: '/Assets/images/Mocha Frappe.jpg' },
 
     // Snacks
-    'Croissant': { name: 'Croissant', price: 1.50, image: '/Assets/images/Croissant.png' },
-    'Muffin': { name: 'Muffin', price: 1.80, image: '/Assets/images/Muffin.png' },
-    'Brownie': { name: 'Brownie', price: 2.00, image: '/Assets/images/Brownie.png' },
-    'Cookie': { name: 'Cookie', price: 1.20, image: '/Assets/images/Cookie.png' },
-    'Sandwich': { name: 'Sandwich', price: 2.50, image: '/Assets/images/Sandwich.png' },
-    'Bagel': { name: 'Bagel', price: 2.00, image: '/Assets/images/Bagel.png' }
+    'Chocolate croissant': { name: 'Chocolate croissant', price: 2.00, image: '/Assets/images/Chocolate croissant.jpg' },
+    'Croissant': { name: 'Croissant', price: 2.00, image: '/Assets/images/Croissant701SWSweb_2web.jpg' },
+    'McCoys Cheddar & Onion': { name: "McCoy's Cheddar & Onion", price: 2.00, image: '/Assets/images/Chedder & onion.jpg' },
+    'Chocolate Chip Cookie': { name: 'Chocolate Chip Cookie', price: 2.00, image: '/Assets/images/classic-chocolate-chip-cookies.jpg' },
+    'McCoys Salt & Vinegar': { name: "McCoys Salt & Vinegar", price: 2.00, image: "/Assets/images/McCoy's Salt & Vinegar.png" },
+    'White chocolate cookie': { name: 'White chocolate cookie', price: 2.00, image: '/Assets/images/White chocolate cookie.jpg' },
+    'Chocolate Donut': { name: 'Chocolate Donut', price: 2.00, image: '/Assets/images/Chocolate Donut.jpg' },
+    'Original glazed donut': { name: 'Original glazed donut', price: 2.00, image: '/Assets/images/original glazed donut.jpg' }
 };
 
 function addToCart(productName) {
