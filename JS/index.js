@@ -9,7 +9,27 @@ const productData = {
     'Espresso': { name: 'Espresso', price: 2.00, image: '/Assets/images/Espresso.png' },
     'Fliter black coffee': { name: 'Filter Black Coffee', price: 2.00, image: '/Assets/images/Fliter black coffee.jpeg' },
     'Macchiato': { name: 'Macchiato', price: 2.00, image: '/Assets/images/Macchiato.png' },
-    'Mocha': { name: 'Mocha', price: 2.00, image: '' }
+    'Mocha': { name: 'Mocha', price: 2.00, image: '' },
+
+    // Cold Drinks
+    'Iced Latte': { name: 'Iced Latte', price: 2.50, image: '/Assets/images/Latte.png' },
+    'Iced Americano': { name: 'Iced Americano', price: 2.50, image: '/Assets/images/iced-americano-sq.jpg' },
+    'Iced Mocha': { name: 'Iced Mocha', price: 2.50, image: '/Assets/images/Iced_Cafe_Mocha.jpg' },
+    'Iced Espresso': { name: 'Iced Espresso', price: 2.50, image: '/Assets/images/Iced Espresso.jpeg' },
+    'Iced Macchiato': { name: 'Iced Macchiato', price: 2.50, image: '/Assets/images/IcedMacchiato.png' },
+    'Iced Flat White': { name: 'Iced Flat White', price: 2.50, image: '/Assets/images/IcedFlatWhite.png' },
+    'Frappe': { name: 'Frappe', price: 3.00, image: '/Assets/images/Fappe.jpg' },
+    'Caramel iced frappe': { name: 'Caramel Iced Frappe', price: 3.00, image: '/Assets/images/Caramal iced frappe.jpg' },
+    'Chocolate iced frappe': { name: 'Chocolate Iced Frappe', price: 3.00, image: '/Assets/images/Chocolate iced frappe.jpg' },
+    'Mocha Frappe': { name: 'Mocha Frappe', price: 3.00, image: '/Assets/images/Mocha Frappe.jpg' },
+
+    // Snacks
+    'Croissant': { name: 'Croissant', price: 1.50, image: '/Assets/images/Croissant.png' },
+    'Muffin': { name: 'Muffin', price: 1.80, image: '/Assets/images/Muffin.png' },
+    'Brownie': { name: 'Brownie', price: 2.00, image: '/Assets/images/Brownie.png' },
+    'Cookie': { name: 'Cookie', price: 1.20, image: '/Assets/images/Cookie.png' },
+    'Sandwich': { name: 'Sandwich', price: 2.50, image: '/Assets/images/Sandwich.png' },
+    'Bagel': { name: 'Bagel', price: 2.00, image: '/Assets/images/Bagel.png' }
 };
 
 function addToCart(productName) {
