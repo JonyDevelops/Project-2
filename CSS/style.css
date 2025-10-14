@@ -7,8 +7,9 @@
 /* Local body */
 .Home-body {
     background-image: url('/Assets/images/background.jpg');
-    background-repeat: no repeat;
-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 /* Home Page nav>ul>li> */
@@ -17,7 +18,6 @@ background-size: cover;
     display: flex;
     justify-content: space-between;
     background-color: hsl(0, 64%, 40%);
-    width: #;
 }
 
 @media screen and (max-width: 600px) {
@@ -812,4 +812,28 @@ padding: 7px;
 
 .cart-btn .close {
     background-color: #888;
+}
+
+/* =================================
+    About page
+================================= */
+.contact-section {
+    background-image: url('/Assets/images/about.background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+
+.contact-container{
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 90vh;
+}
+
+.contact-title{
+
 }

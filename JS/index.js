@@ -104,7 +104,7 @@ function renderCartItems() {
                     <p class="cart-item-price">£${item.price.toFixed(2)}</p>
                 </div>
                 <div class="cart-item-quantity">
-                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)">-</button>
+                    <button class="quantity-btn" onclick="geQuantity(${item.id}, -1)">-</button>
                     <span class="quantity">${item.quantity}</span>
                     <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
                 </div>
