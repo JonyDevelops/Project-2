@@ -20,12 +20,18 @@
 
 [![Static Badge](https://img.shields.io/badge/HTML-white?style=flat-square&logo=html5)](https://www.freecodecamp.org/learn/2022/responsive-web-design/) <br/>
 [![Static Badge](https://img.shields.io/badge/CSS-blue?style=flat-square&logo=CSS)](https://www.freecodecamp.org/learn/2022/responsive-web-design/)  <br/>
+![Static Badge](https://img.shields.io/badge/Javascript-%23F7DF1E?logo=javascript&logoColor=black) <br/>
 [![Static Badge](https://img.shields.io/badge/Git-black?style=flat-square&logo=Git)](https://git-scm.com/)  <br/>
 
 ## HTML & CSS, JavaScript Validator Tests
 
-<br/>
-
+#### HTML
+- Removed illegal spaces in img tags and replaced them with hyphens
+- Fixed div errors 
+#### CSS: 
+- Removed commas in border <br/>
+#### JavaScript
+- No errors
 ## Web Accessibility Tests
 Completed
 <br/>
