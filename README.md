@@ -31,7 +31,7 @@ Completed
 <br/>
 
 ## What did you think the biggest challenges would be with this Project?
-Hamburger menu for mobile navigation and JavaScript local storage. </
+Hamburger menu for mobile navigation and JavaScript local storage. 
 <br/>
 
 ## Future improvements
