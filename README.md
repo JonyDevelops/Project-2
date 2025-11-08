@@ -31,12 +31,13 @@
 <br/>
 
 ## What did you think the biggest challenges would be with this Project?
-
+Hamburger menu for mobile navigation and JavaScript local storage
 <br/>
 
 ## Future improvements
-
+Projects will be finished faster and look better
 <br/>
 
 ## Resources that helped me
+My mentor and Forums, YouTube
 <br/>
