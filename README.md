@@ -22,16 +22,16 @@
 [![Static Badge](https://img.shields.io/badge/CSS-blue?style=flat-square&logo=CSS)](https://www.freecodecamp.org/learn/2022/responsive-web-design/)  <br/>
 [![Static Badge](https://img.shields.io/badge/Git-black?style=flat-square&logo=Git)](https://git-scm.com/)  <br/>
 
-## HTML & CSS Validator Tests
+## HTML & CSS, JavaScript Validator Tests
 
 <br/>
 
 ## Web Accessibility Tests
-
+Completed
 <br/>
 
 ## What did you think the biggest challenges would be with this Project?
-Hamburger menu for mobile navigation and JavaScript local storage
+Hamburger menu for mobile navigation and JavaScript local storage. </
 <br/>
 
 ## Future improvements
