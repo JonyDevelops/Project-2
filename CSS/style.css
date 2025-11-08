@@ -145,33 +145,6 @@ body {
     box-shadow: 0 8px 32px #a8959522;
     transform: translateY(-2px) scale(1.04);
 }
-
-.order-now-btn {
-    background: rgba(168, 149, 149, 0.35); /* semi-transparent accent */
-    color: #000000;
-    border: 2px solid #fff;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 24px #0002;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 
-        background 0.25s,
-        color 0.25s,
-        border-color 0.25s,
-        box-shadow 0.25s,
-        transform 0.15s;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.order-now-btn:hover {
-    background: rgba(255,255,255,0.25);
-    color: #a89595;
-    border-color: #a89595;
-    box-shadow: 0 8px 32px #a8959522;
-    transform: translateY(-2px) scale(1.04);
-}
 /* =================================
     Home page end
 ================================= */
@@ -489,6 +462,12 @@ padding: 7px;
     height: 28px;
     stroke: #000;
     transition: stroke 0.2s;
+}
+
+media screen and (width < 426x) {
+    .cart-icon {
+        width: 100px;
+    }
 }
 
 .cart-icon:hover svg {
@@ -983,8 +962,8 @@ flex-wrap: wrap;
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        left: 20px;
+        top: 15px;
     }
 
     .navbar nav ul {
@@ -1010,7 +989,7 @@ flex-wrap: wrap;
         font-size: 24px;
     }
 
-    /* Hamburger animation */
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
