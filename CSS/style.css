@@ -478,7 +478,7 @@ padding: 7px;
     transition: stroke 0.2s;
 }
 
-media screen and (width < 426x) {
+@media screen and (width < 426px) {
     .cart-icon {
         width: 100px;
     }
