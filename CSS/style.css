@@ -453,6 +453,20 @@ padding: 7px;
     margin-right: 20px;
 }
 
+@media screen and (max-width: 425px) {
+    .cart-icon {
+        position: fixed;
+        top: 24px;
+        right: 20px;
+        z-index: 101; 
+    }
+
+    .hamburger {
+        left: 20px;
+        right: auto;
+    }
+}
+
 .cart-icon:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1002,3 +1016,4 @@ flex-wrap: wrap;
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
