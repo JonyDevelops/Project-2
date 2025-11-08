@@ -9,15 +9,10 @@
 
 <div align="center">
    
-[![GitHub contributors]
-[![GitHub forks]
-[![GitHub Repo stars]
-[![GitHub Issues or Pull Requests]
-
-
-
-
-
+![GitHub contributors](https://img.shields.io/github/contributors/JonyDevelops/Project-2?style=flat-square&color=yellow)
+![GitHub forks](https://img.shields.io/github/forks/JonyDevelops/Project-2?style=flat-square&color=blue)
+![GitHub Repo stars](https://img.shields.io/github/stars/JonyDevelops/Project-2?style=flat-square&color=purple)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/JonyDevelops/Project-2)
 
 </div>
 
