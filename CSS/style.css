@@ -47,7 +47,7 @@
 @media screen and (max-width: 426px) {
     .navbar nav {
         display: flex;
-        padding: 80px;
+        padding: 13px;
         flex-direction: column;
         text-align: center;
         line-height: 2;
@@ -561,6 +561,7 @@ padding: 7px;
     border-radius: 12px;
     padding: 15px;
     transition: box-shadow 0.2s;
+    margin: 10px;
 }
 
 .cart-item:hover {
@@ -579,10 +580,11 @@ padding: 7px;
     margin: 0 0 5px 0;
     font-size: 1.2rem;
     color: #222;
+    margin: 20px;
 }
 
 .cart-item-price {
-    margin: 0;
+        margin: 20px;
     color: #666;
     font-weight: bold;
 }
@@ -591,6 +593,7 @@ padding: 7px;
     display: flex;
     align-items: center;
     gap: 10px;
+        margin: 20px;
 }
 
 .quantity-btn {
@@ -603,7 +606,7 @@ padding: 7px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s;s
 }
 
 .quantity-btn:hover {
